@@ -1,11 +1,6 @@
 # 명함 NFT 개인 과제
 이 예시를 실행해보시고 싶다면 아래의 단계대로 수행해주세요.<br/>
-### bv-cardNFT-example-simple-ver.(예시 프로젝트) clone 받기
-먼저 클론받을 위치(ex. Desktop, 바탕화면)으로 이동하셔서(windows의 경우 cmd, Mac의 경우 terminal을 이용해)<br/>
-```shell
-git clone https://github.com/Block-Chain-Valley/bv-cardNFT-example-simple-ver.
-```
-하신 후에 Visual Studio Code에서 클론받은 폴더를 실행해줍니다.
+
 
 ### 패키지 설치
 Visual Studio Code의 터미널을 켜고
@@ -26,7 +21,7 @@ METAMASK_PRIVATE_KEY="Metamask_private_key"
   - metamask chrome extension에서 오른쪽 상단의 점 세개 > 계정 세부 정보 > show private key로 확인하실 수 있습니다.
 
 
-### ```SimpleCardNFTFactory.sol``` 파일을 compile하여 ```typechain-types``` 폴더 생성
+### ```MyBusinessCardNFTFactory.sol``` 파일을 compile하여 ```typechain-types``` 폴더 생성
 Visual Studio Code의 터미널에서
 ```shell
 npx hardhat compile
@@ -36,7 +31,7 @@ npx hardhat compile
 
 
 ### mint and trasfer 해보기
-제가 이미 sepolia network에 SimpleCardNFTFactory contract를 배포해놓은 상황입니다.(```scripts/deploy.ts```를 이용해)<br/>
+제가 이미 sepolia network에 MyBusinessCardNFTFactory contract를 배포해놓은 상황입니다.(```scripts/deploy.ts```를 이용해)<br/>
 그리고 그 배포한 contract 주소를 ```scripts/deploy.ts```에 넣어놓았습니다.<br/>
 따라서 따로 contract를 배포하실 필요는 없고 ```scripts/mintAndTransfer.ts```만 실행해주시면 됩니다.<br/>
 실행하는 방법은 아래와 같습니다.<br/>
@@ -54,7 +49,6 @@ npx hardhat run --network sepolia scripts/mintAndTransfer.ts
 를 검색하시면 트랜잭션 내역이 뜹니다.<br/>
 여기서 트랜잭션이 잘 이루어졌는지 확인하실 수 있습니다.<br/>
 
-## 참고하셔서 여러분만의 멋진 명함 NFT 만들어주시기 바랍니다~~~! 
 
 
 
